@@ -102,8 +102,8 @@
                     <div class="mt-2"><i class="bi bi-clock-history"></i>&nbsp;Last updated 17 October, 2025.</div>
                     <br>
                 </div>
-                <div class="col-sm text-white text-right mt-5 pb-3 pl-3" id="show-fullscreen" style="display: none;">
-                    <a target="_blank" href="https://www.etsu.edu/cbat/computing/cyber/cioc.php"><button class="bttn-putty-yellow-sm">
+                <div class="col-sm text-white text-right mt-5 pb-3 pl-3" id="show-fullscreen">
+                    <a target="_blank" href="https://ryan-etsu-computing-projects.github.io/webpages/computing/cioc/"><button class="bttn-putty-yellow-sm">
                         View fullscreen&ensp;<i class="bi bi-box-arrow-up-right fs-400"></i>
                     </button></a>
                     <br>
@@ -126,7 +126,7 @@
                         Students
                     </button>
                     <button onclick="scrollToSection('partnerships')">
-                        <i class="bi bi-handshake-fill"></i>
+                        <i class="bi bi-star-fill"></i>
                         Partners
                     </button>
                     <button class="hide-on-phone" onclick="scrollToSection('faculty')">
@@ -168,7 +168,7 @@
             </button>
             <br>
             <button onclick="scrollToSection('partnerships')">
-                <i class="bi bi-handshake-fill fs-450"></i>
+                <i class="bi bi-star-fill fs-450"></i>
                 &ensp;Partnerships
             </button>
             <br>
@@ -648,11 +648,6 @@
                         modalManuallyDismissed = true;
                     }
                 });
-            }
-
-            if (window !== window.top) {
-                // Running in an iframe --> Make the fullscreen button visible
-                document.getElementById('view-fullscreen').style.display = 'block';
             }
         });
 
