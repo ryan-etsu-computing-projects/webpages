@@ -176,14 +176,14 @@ footer {
 
 .body-bg-img {
     background: linear-gradient(rgba(66,109,174,.5), rgba(66,109,174,.5)),
-    url("https://ryan-etsu-computing-projects.github.io/webpages/static/img/bg-dune-geometric-minimal-red-gradient.svg");
+    url("https://ryan-etsu-computing-projects.github.io/webpages/static/img/bg-elliptic-curve-eye-minimal-yellow-blue.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .body-bg-img-light {
     background: linear-gradient(rgba(240, 212, 247, 0.5), rgba(183, 211, 252, 0.5)),
-    url("https://ryan-etsu-computing-projects.github.io/webpages/static/img/bg-dune-geometric-minimal-red-gradient.svg");
+    url("https://ryan-etsu-computing-projects.github.io/webpages/static/img/bg-elliptic-curve-eye-minimal-yellow-blue.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
