@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>CIOC - Cybersecurity Innovation and Outreach Center</title>
+    <title>CIOC at ETSU</title>
     <meta name="description" content="The Cybersecurity Innovation and Outreach Center at East Tennessee State University is the region's hub for excellence in cybersecurity education, research, and community outreach.">
     <meta name="author" content="ETSU Computing Department">
     <meta name="keywords" content="cybersecurity, innovation, outreach, center, ETSU, CAE-CD, NSA, cyber defense, education">
@@ -17,8 +17,14 @@
     <style>
         img.title-logo-inline {
             display: inline;
-            width: 100px;
+            width: 110px;
         }
+
+        img.footer-logo-inline {
+            display: inline;
+            width: 145px;
+        }
+
         img.profile-headshot {
             object-fit: contain;
             float: right;
@@ -96,7 +102,7 @@
                 <div class="mt-2"><i class="bi bi-clock-history"></i>&nbsp;Last updated 17 October, 2025.</div>
                 <br>
             </div>
-            <div class="col-sm text-white text-right mt-5 pb-3 pl-3">
+            <div class="col-sm text-white text-right mt-5 pb-3 pl-3" id="show-fullscreen" style="display: none;">
                 <a target="_blank" href="https://www.etsu.edu/cbat/computing/cyber/cioc.php"><button class="bttn-putty-yellow-sm">
                     View fullscreen&ensp;<i class="bi bi-box-arrow-up-right fs-400"></i>
                 </button></a>
@@ -576,7 +582,7 @@
                             </div>
                             <div class="col-sm">
                                 <img src="https://ryan-etsu-computing-projects.github.io/webpages/static/img/etsu-cioc-logo.png"
-                                    class="title-logo-inline" alt="ETSU CIOC logo">
+                                    class="footer-logo-inline" alt="ETSU CIOC logo" id="logo-footer">
                             </div>
                         </div>
                     </div>
@@ -586,7 +592,7 @@
     </div>
 
     <script>
-        let collapse = document.getElementsByClassName("collapse-container");
+        const collapse = document.getElementsByClassName("collapse-container");
         for (let i = 0; i < collapse.length; i++) {
             collapse[i].addEventListener("click", function() {
                 this.classList.toggle("active");
@@ -642,6 +648,11 @@
                         modalManuallyDismissed = true;
                     }
                 });
+            }
+
+            if (window !== window.top) {
+                // Running in an iframe --> Make the fullscreen button visible
+                document.getElementById('view-fullscreen').style.display = 'block';
             }
         });
 
