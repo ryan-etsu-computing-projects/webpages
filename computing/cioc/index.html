@@ -251,7 +251,7 @@
                                                 <span class="fs-350 ml-4s" title="Expand collapsed content">☰&emsp;</span>
                                             </div>
                                             <div>
-                                                <i class="bi bi-award-fill"></i> ABET-Accredited Program
+                                                <i class="bi bi-award"></i>&ensp;ABET-Accredited Program
                                             </div>
                                         </div>
                                     </div>
@@ -266,7 +266,7 @@
                                                 <span class="fs-350 ml-4s" title="Expand collapsed content">☰&emsp;</span>
                                             </div>
                                             <div>
-                                                <i class="bi bi-laptop-fill"></i> Hands-on Laboratory Learning
+                                                <i class="bi bi-laptop"></i>&ensp;Hands-on Laboratory Learning
                                             </div>
                                         </div>
                                     </div>
@@ -283,7 +283,7 @@
                                                 <span class="fs-350 ml-4s" title="Expand collapsed content">☰&emsp;</span>
                                             </div>
                                             <div>
-                                                <i class="bi bi-patch-check-fill"></i> Industry Certifications
+                                                <i class="bi bi-patch-check"></i>&ensp;Industry Certifications
                                             </div>
                                         </div>
                                     </div>
@@ -298,7 +298,7 @@
                                                 <span class="fs-350 ml-4s" title="Expand collapsed content">☰&emsp;</span>
                                             </div>
                                             <div>
-                                                <i class="bi bi-graph-up-arrow"></i> Career Readiness
+                                                <i class="bi bi-graph-up-arrow"></i>&ensp;Career Readiness
                                             </div>
                                         </div>
                                     </div>
@@ -596,12 +596,13 @@
         for (let i = 0; i < collapse.length; i++) {
             collapse[i].addEventListener("click", function() {
                 this.classList.toggle("active");
-                var content = this.nextElementSibling;
+                let content = this.nextElementSibling;
                 if (content.style.display === "block") {
                     content.style.display = "none";
                 }
                 else {
                     content.style.display = "block";
+                    this.scrollIntoView({behavior: 'smooth'});
                 }
             });
         }
