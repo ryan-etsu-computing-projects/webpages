@@ -591,13 +591,10 @@
             collapse[i].addEventListener("click", function() {
                 this.classList.toggle("active");
                 let content = this.nextElementSibling;
-                if (content.style.display === "block") {
+                if (content.style.display === "block") 
                     content.style.display = "none";
-                }
-                else {
+                else
                     content.style.display = "block";
-                    this.scrollIntoView({behavior: 'smooth'});
-                }
             });
         }
 
