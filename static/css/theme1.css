@@ -388,13 +388,18 @@ and (max-width: 440px) {
 /* Styles for dark mode */
 @media (prefers-color-scheme: dark) {
     .bg-dark { background-color: hsl( var(--clr-light) )!important; }
-    .bg-light { background-color: hsl( var(--clr-icon-charcoal) )!important; }
+    .bg-light { background-color: var(--clr-icon-charcoal)!important; }
     .bg-white { background-color: hsl( var(--clr-dark) )!important; }
     .bg-light-gray { background-color: hsl( var(--clr-light-gray) )!important; }
     .bg-accent-light { background-color: hsl( var(--clr-accent-dark) )!important; }
 
-    .card, .card-row {
+    .card-row {
         background-color: hsl( var(--clr-dark) )!important;
+        color: white!important;
+    }
+
+    .card, .card-body {
+        background-color: #343338!important;
         color: white!important;
     }
 
@@ -404,6 +409,10 @@ and (max-width: 440px) {
 
     .text-primary-blue {
         color: #a6d1f3!important;
+    }
+
+    .card-subtitle {
+        color: #7692a8!important;
     }
 
     .scrollbox-xs, .scrollbox-md, .scrollbox-lg, .scrollbox-xl {
