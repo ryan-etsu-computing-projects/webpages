@@ -118,6 +118,10 @@ h3 {
     font-size: 1.6rem;
 }
 
+a.href {
+    color: hsl( var(--clr-secondary-blue) );
+}
+
 textarea {
     width: 85%;
     margin-left: 5px;
